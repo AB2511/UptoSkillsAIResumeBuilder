@@ -1,0 +1,42 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+[contentEditable] {
+  outline: none;
+  cursor: text;
+}
+
+[contentEditable]:focus {
+  background: #eef;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .resume-container {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .resume-section {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .resume-header {
+    break-after: avoid-page;
+  }
+}
+ul {
+  list-style-position: inside;
+  margin-left: 0;
+}

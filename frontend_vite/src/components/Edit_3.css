@@ -1,0 +1,101 @@
+<body class="m-0 font-sans bg-gray-100 text-gray-800">
+
+<div class="flex flex-row min-h-screen">
+
+  <aside class="w-64 p-5 bg-gray-800 shadow-md sticky top-0 h-screen min-w-64 max-w-64 overflow-hidden transition-all duration-300 ease-in-out">
+    <div class="overflow-y-auto h-full">
+      <style>
+        .sidebar::-webkit-scrollbar { width: 8px; }
+        .sidebar::-webkit-scrollbar-track { background: #34495e; }
+        .sidebar::-webkit-scrollbar-thumb { background: #1abc9c; border-radius: 4px; }
+        .sidebar::-webkit-scrollbar-thumb:hover { background: #16a085; }
+      </style>
+
+      <button class="flex w-full p-3 m-3 bg-gray-700 text-white border-none rounded-lg text-base cursor-pointer transition-all duration-300 text-left relative overflow-hidden justify-center hover:bg-teal-500 hover:scale-105">
+        Sidebar Button
+        <span class="absolute top-1/2 left-1/2 w-[300%] h-[300%] bg-white/10 transform -translate-x-1/2 -translate-y-1/2 rotate-45 transition-all duration-500 opacity-0 hover:opacity-100 hover:rotate-0"></span>
+      </button>
+
+      <button class="flex w-full p-3 m-3 bg-yellow-800 text-white border-none rounded-lg text-base cursor-pointer transition-all duration-300 text-left relative overflow-hidden justify-center hover:bg-yellow-600 hover:scale-105">
+        Premium Button
+        <span class="absolute top-1/2 left-1/2 w-[300%] h-[300%] bg-white/10 transform -translate-x-1/2 -translate-y-1/2 rotate-45 transition-all duration-500 opacity-0 hover:opacity-100 hover:rotate-0"></span>
+      </button>
+
+      <label class="block text-white mt-5 text-sm">
+        Toggle Branding
+        <input type="checkbox" class="ml-2">
+      </label>
+
+      <button class="block w-full p-3 mt-5 bg-blue-600 text-white border-none rounded-lg text-sm cursor-pointer transition-colors duration-300 text-left hover:bg-blue-500">
+        Upload
+      </button>
+    </div>
+  </aside>
+
+  <main class="flex-grow p-5 bg-white">
+
+    <div class="w-4/5 mx-auto my-5 p-5 border border-gray-300 rounded-lg bg-gray-50 shadow-md overflow-visible">
+
+      <header class="flex flex-col items-center justify-center text-center mb-5">
+        <h1 class="m-0 text-3xl text-gray-800 font-bold relative cursor-pointer">
+          Your Name
+          <div class="absolute top-0 right-0 flex gap-2">
+            <span class="text-3xl cursor-pointer"></span>
+          </div>
+        </h1>
+        <p class="text-lg text-gray-600 mt-1 italic">Your Title</p>
+      </header>
+
+      <div class="flex justify-center gap-3 flex-wrap w-full text-center">
+        <span class="text-sm text-gray-700 flex items-center"></span>
+      </div>
+
+      <section class="mb-5 block page-break-before-auto">
+        <h2 class="text-2xl text-gray-800 border-b-2 border-gray-300 pb-1 mb-2 font-semibold">Section Title</h2>
+
+        <div class="mb-3 flex justify-between items-start">
+          <div class="flex-1">
+            <h3 class="text-lg mb-1 text-gray-800 font-medium">Item Title</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">Item Description</p>
+            <ul class="pl-5 mt-1">
+              <li class="text-sm text-gray-700 mb-1 list-disc">List Item</li>
+            </ul>
+          </div>
+          <div class="text-right ml-5 min-w-[150px]">Date/Location</div>
+        </div>
+      </section>
+
+      <div contenteditable="true" class="outline-none cursor-text p-1 rounded-md focus:bg-blue-100 focus:border focus:border-gray-300"></div>
+
+      <button class="inline-block m-1 p-2 bg-purple-800 text-white border-none rounded-md text-sm cursor-pointer transition-all duration-300 hover:bg-blue-600 hover:scale-105">Button</button>
+
+      <button class="block mx-auto my-5 p-3 bg-gradient-to-r from-purple-800 to-blue-600 text-white border-none rounded-md text-lg cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg">Download</button>
+
+      <div class="absolute top-24 right-12 bg-white p-3 rounded-lg shadow-md z-50">
+        <h3 class="mt-0">Settings</h3>
+        <label class="block mb-2">Setting Label</label>
+      </div>
+
+      <div class="bg-white text-gray-800 p-2 border border-gray-300 rounded-lg mt-2">AI Field Enhancement</div>
+
+      <ul class="list-disc pl-5">
+        <li class="flex items-center justify-between p-2 w-full border-b border-gray-300">
+          <span class="flex-grow text-base">Skill Name</span>
+          <button class="bg-red-600 text-white border-none p-1 rounded-md cursor-pointer ml-2 hover:bg-red-800">Remove</button>
+        </li>
+      </ul>
+
+      <div class="max-w-md mx-auto p-5 bg-gray-50 rounded-lg shadow-md">
+        <section class="bg-white p-2 mb-2 rounded-md relative shadow-sm">
+          <h3 class="mt-0">Editor Section</h3>
+          <button class="absolute top-1 right-1 bg-red-600 text-white border-none text-xs p-1 rounded-full cursor-pointer hover:bg-red-800">X</button>
+        </section>
+        <button class="block w-full mt-2 p-2 bg-blue-600 text-white border-none rounded-md cursor-pointer text-base">Enhance</button>
+        <button class="block w-full mt-2 p-2 bg-green-600 text-white border-none rounded-md cursor-pointer text-base">Save</button>
+        <div class="text-center text-gray-700 font-bold mb-2">Loading...</div>
+      </div>
+
+      <div class="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-[999]">
+        <div class="w-12 h-12 border-4 border-white border-t-blue-500 rounded-full animate-spin"></div>
+        <p class="text-white text-lg font-bold text-shadow-lg">Loading...</p>
+      </div>
